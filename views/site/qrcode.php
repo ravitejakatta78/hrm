@@ -1,0 +1,1 @@
+<?php echo 'Please download the Foodq APP'; ?>

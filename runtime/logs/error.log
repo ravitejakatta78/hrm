@@ -1,0 +1,1731 @@
+2021-05-23 15:25:13 [127.0.0.1][-][-][error][Error] Error: Class 'app\models\MerchantEmployee' not found in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php:595
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#13 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#15 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#17 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#18 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#19 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#20 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#21 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#22 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#23 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#24 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#25 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->__construct(Array)
+#26 {main}
+2021-05-23 15:25:13 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51409'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776313.4327
+    'REQUEST_TIME' => 1621776313
+]
+2021-05-23 15:25:42 [127.0.0.1][-][-][error][Error] Error: Class 'app\models\MerchantEmployee' not found in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php:595
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#13 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#15 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#17 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#18 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#19 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#20 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#21 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#22 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#23 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#24 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#25 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->__construct(Array)
+#26 {main}
+2021-05-23 15:25:42 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51436'
+    'REDIRECT_URL' => '/hrm/web/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/gii'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776342.5074
+    'REQUEST_TIME' => 1621776342
+]
+2021-05-23 15:25:46 [127.0.0.1][-][-][error][Error] Error: Class 'app\models\MerchantEmployee' not found in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php:595
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#13 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#15 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#17 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#18 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#19 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#20 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#21 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#22 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#23 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#24 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#25 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->__construct(Array)
+#26 {main}
+2021-05-23 15:25:46 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51440'
+    'REDIRECT_URL' => '/hrm/web/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/gii'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776346.5721
+    'REQUEST_TIME' => 1621776346
+]
+2021-05-23 15:26:30 [127.0.0.1][-][-][error][Error] Error: Class 'app\models\MerchantEmployee' not found in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php:595
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#13 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#15 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#17 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#18 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#19 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#20 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#21 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#22 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#23 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#24 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#25 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->__construct(Array)
+#26 {main}
+2021-05-23 15:26:30 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51448'
+    'REDIRECT_URL' => '/hrm/web/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/gii'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776390.9346
+    'REQUEST_TIME' => 1621776390
+]
+2021-05-23 15:26:41 [127.0.0.1][-][-][error][Error] Error: Class 'app\models\MerchantEmployee' not found in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php:595
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#13 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#15 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#17 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#18 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#19 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#20 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#21 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#22 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#23 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#24 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#25 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->__construct(Array)
+#26 {main}
+2021-05-23 15:26:41 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51450'
+    'REDIRECT_URL' => '/hrm/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/site/login'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776401.9078
+    'REQUEST_TIME' => 1621776401
+]
+2021-05-23 15:27:01 [127.0.0.1][-][-][error][Error] Error: Class 'app\models\MerchantEmployee' not found in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php:595
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#13 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#15 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#17 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#18 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#19 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#20 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#21 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#22 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#23 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#24 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#25 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->__construct(Array)
+#26 {main}
+2021-05-23 15:27:01 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51462'
+    'REDIRECT_URL' => '/hrm/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/site/login'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776421.4446
+    'REQUEST_TIME' => 1621776421
+]
+2021-05-23 15:28:09 [127.0.0.1][-][-][error][Error] Error: Call to undefined method app\models\Users::findIdentity() in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php:595
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#13 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#15 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#17 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#18 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#19 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#20 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#21 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#22 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#23 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#24 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#25 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->__construct(Array)
+#26 {main}
+2021-05-23 15:28:09 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51492'
+    'REDIRECT_URL' => '/hrm/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/site/login'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776489.3473
+    'REQUEST_TIME' => 1621776489
+]
+2021-05-23 15:28:37 [127.0.0.1][-][-][error][Error] Error: Call to undefined method app\models\Users::findByUsername() in C:\xampp\htdocs\hrm\models\LoginForm.php:85
+Stack trace:
+#0 C:\xampp\htdocs\hrm\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#1 [internal function]: app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#5 C:\xampp\htdocs\hrm\models\LoginForm.php(71): yii\base\Model->validate()
+#6 C:\xampp\htdocs\hrm\controllers\SiteController.php(96): app\models\LoginForm->login()
+#7 [internal function]: app\controllers\SiteController->actionLogin()
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-05-23 15:28:36 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => '-ej8MalMjWDU6GlMssv0maJ1yhKyweU8hqia5CrplUGporhd3i3-UIOYJ3iDusDWzAH8J4G5sEr30PCUfKDadQ=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'cteladminadmin'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'aa1c2995fa6060aa1f3a4e2a8fd1e08af6840dd4767634b87b6967b5962316e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PJDlwas0WpN41q4Ont653xUvqxjpVIO4\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '181'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/hrm/web/site/login'
+    'HTTP_COOKIE' => '_csrf=aa1c2995fa6060aa1f3a4e2a8fd1e08af6840dd4767634b87b6967b5962316e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PJDlwas0WpN41q4Ont653xUvqxjpVIO4%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51499'
+    'REDIRECT_URL' => '/hrm/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/site/login'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776516.9182
+    'REQUEST_TIME' => 1621776516
+]
+2021-05-23 15:33:03 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Key "user_name" is not a column name and can not be used as a filter in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\db\ActiveRecord.php:238
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\db\ActiveRecord.php(191): yii\db\ActiveRecord::filterCondition(Array, Array)
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#2 C:\xampp\htdocs\hrm\models\Users.php(85): yii\db\BaseActiveRecord::findOne(Array)
+#3 C:\xampp\htdocs\hrm\models\LoginForm.php(85): app\models\Users::findByUsername('admin')
+#4 C:\xampp\htdocs\hrm\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#5 [internal function]: app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#7 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#9 C:\xampp\htdocs\hrm\models\LoginForm.php(71): yii\base\Model->validate()
+#10 C:\xampp\htdocs\hrm\controllers\SiteController.php(96): app\models\LoginForm->login()
+#11 [internal function]: app\controllers\SiteController->actionLogin()
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#15 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->run()
+#18 {main}
+2021-05-23 15:33:03 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => '9_8FZB2CmpJKiUzsqc21exhp5patijB0V6FnUHpfPxmntUEIauPpoh35AtiYvIE0dh3Qo57yZQIm2Q0gLBZwLQ=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'aa1c2995fa6060aa1f3a4e2a8fd1e08af6840dd4767634b87b6967b5962316e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PJDlwas0WpN41q4Ont653xUvqxjpVIO4\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '172'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/hrm/web/site/login'
+    'HTTP_COOKIE' => '_csrf=aa1c2995fa6060aa1f3a4e2a8fd1e08af6840dd4767634b87b6967b5962316e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PJDlwas0WpN41q4Ont653xUvqxjpVIO4%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51771'
+    'REDIRECT_URL' => '/hrm/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/site/login'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776783.0428
+    'REQUEST_TIME' => 1621776783
+]
+2021-05-23 15:33:42 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\LoginForm::email in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\hrm\models\LoginForm.php(85): yii\base\Component->__get('email')
+#1 C:\xampp\htdocs\hrm\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#2 [internal function]: app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#6 C:\xampp\htdocs\hrm\models\LoginForm.php(71): yii\base\Model->validate()
+#7 C:\xampp\htdocs\hrm\controllers\SiteController.php(96): app\models\LoginForm->login()
+#8 [internal function]: app\controllers\SiteController->actionLogin()
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#13 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2021-05-23 15:33:42 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => '9_8FZB2CmpJKiUzsqc21exhp5patijB0V6FnUHpfPxmntUEIauPpoh35AtiYvIE0dh3Qo57yZQIm2Q0gLBZwLQ=='
+    'LoginForm' => [
+        'username' => 'admin@hrm.com'
+        'password' => 'admin'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'aa1c2995fa6060aa1f3a4e2a8fd1e08af6840dd4767634b87b6967b5962316e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PJDlwas0WpN41q4Ont653xUvqxjpVIO4\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '182'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/hrm/web/site/login'
+    'HTTP_COOKIE' => '_csrf=aa1c2995fa6060aa1f3a4e2a8fd1e08af6840dd4767634b87b6967b5962316e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PJDlwas0WpN41q4Ont653xUvqxjpVIO4%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51792'
+    'REDIRECT_URL' => '/hrm/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/site/login'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776822.6379
+    'REQUEST_TIME' => 1621776822
+]
+2021-05-23 15:34:34 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ';' in C:\xampp\htdocs\hrm\models\Users.php:85
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\User...')
+#1 C:\xampp\htdocs\hrm\models\LoginForm.php(85): spl_autoload_call('app\\models\\User...')
+#2 C:\xampp\htdocs\hrm\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#3 [internal function]: app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#7 C:\xampp\htdocs\hrm\models\LoginForm.php(71): yii\base\Model->validate()
+#8 C:\xampp\htdocs\hrm\controllers\SiteController.php(96): app\models\LoginForm->login()
+#9 [internal function]: app\controllers\SiteController->actionLogin()
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#13 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2021-05-23 15:34:34 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'YmFqoC08z_RrWEpEVJqtdFC3eZD7wSk4_6KN7mUu4rIyKy7MWl28xDwoBHBl65k7PsNPpci5fE6O2ueeM2ethg=='
+    'LoginForm' => [
+        'username' => 'admin@hrm.com'
+        'password' => 'admin'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'aa1c2995fa6060aa1f3a4e2a8fd1e08af6840dd4767634b87b6967b5962316e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PJDlwas0WpN41q4Ont653xUvqxjpVIO4\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '182'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/hrm/web/site/login'
+    'HTTP_COOKIE' => '_csrf=aa1c2995fa6060aa1f3a4e2a8fd1e08af6840dd4767634b87b6967b5962316e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PJDlwas0WpN41q4Ont653xUvqxjpVIO4%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51850'
+    'REDIRECT_URL' => '/hrm/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/site/login'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776874.178
+    'REQUEST_TIME' => 1621776874
+]
+2021-05-23 15:34:47 [127.0.0.1][-][-][error][Error] Error: Class 'app\models\Merchant' not found in C:\xampp\htdocs\hrm\models\LoginForm.php:54
+Stack trace:
+#0 [internal function]: app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#4 C:\xampp\htdocs\hrm\models\LoginForm.php(71): yii\base\Model->validate()
+#5 C:\xampp\htdocs\hrm\controllers\SiteController.php(96): app\models\LoginForm->login()
+#6 [internal function]: app\controllers\SiteController->actionLogin()
+#7 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2021-05-23 15:34:47 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'YmFqoC08z_RrWEpEVJqtdFC3eZD7wSk4_6KN7mUu4rIyKy7MWl28xDwoBHBl65k7PsNPpci5fE6O2ueeM2ethg=='
+    'LoginForm' => [
+        'username' => 'admin@hrm.com'
+        'password' => 'admin'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'aa1c2995fa6060aa1f3a4e2a8fd1e08af6840dd4767634b87b6967b5962316e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PJDlwas0WpN41q4Ont653xUvqxjpVIO4\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/hrm/web/site/login'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '182'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=aa1c2995fa6060aa1f3a4e2a8fd1e08af6840dd4767634b87b6967b5962316e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PJDlwas0WpN41q4Ont653xUvqxjpVIO4%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51854'
+    'REDIRECT_URL' => '/hrm/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/site/login'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776887.2397
+    'REQUEST_TIME' => 1621776887
+]
+2021-05-23 15:35:24 [127.0.0.1][1][97vfpl1ogolmgk383pbftbqnkp][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Users::merchant_id in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('merchant_id')
+#1 C:\xampp\htdocs\hrm\views\layouts\_header.php(4): yii\db\BaseActiveRecord->__get('merchant_id')
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\hrm\views\layouts\main.php(35): yii\base\View->renderFile('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\AdminController))
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('<h1>admin/index...')
+#9 C:\xampp\htdocs\hrm\controllers\AdminController.php(9): yii\base\Controller->render('index')
+#10 [internal function]: app\controllers\AdminController->actionIndex()
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/index', Array)
+#15 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2021-05-23 15:35:24 [127.0.0.1][1][97vfpl1ogolmgk383pbftbqnkp][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S\";}'
+    'PHPSESSID' => '97vfpl1ogolmgk383pbftbqnkp'
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/hrm/web/site/login'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=d5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S%22%3B%7D; PHPSESSID=97vfpl1ogolmgk383pbftbqnkp; _identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51870'
+    'REDIRECT_URL' => '/hrm/web/admin/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/admin/index'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621776924.4149
+    'REQUEST_TIME' => 1621776924
+]
+2021-05-23 15:41:05 [127.0.0.1][1][97vfpl1ogolmgk383pbftbqnkp][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\hrm\views\admin\index.php in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\AdminController))
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('index', Array, Object(app\controllers\AdminController))
+#2 C:\xampp\htdocs\hrm\controllers\AdminController.php(9): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\AdminController->actionIndex()
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/index', Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2021-05-23 15:41:05 [127.0.0.1][1][97vfpl1ogolmgk383pbftbqnkp][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S\";}'
+    'PHPSESSID' => '97vfpl1ogolmgk383pbftbqnkp'
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/hrm/web/site/login'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=d5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S%22%3B%7D; PHPSESSID=97vfpl1ogolmgk383pbftbqnkp; _identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '51974'
+    'REDIRECT_URL' => '/hrm/web/admin/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/admin/index'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621777264.99
+    'REQUEST_TIME' => 1621777264
+]
+2021-05-23 15:41:48 [127.0.0.1][1][97vfpl1ogolmgk383pbftbqnkp][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\hrm\views\admin\index.php in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\AdminController))
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('index', Array, Object(app\controllers\AdminController))
+#2 C:\xampp\htdocs\hrm\controllers\AdminController.php(9): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\AdminController->actionIndex()
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/index', Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2021-05-23 15:41:48 [127.0.0.1][1][97vfpl1ogolmgk383pbftbqnkp][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S\";}'
+    'PHPSESSID' => '97vfpl1ogolmgk383pbftbqnkp'
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=d5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S%22%3B%7D; PHPSESSID=97vfpl1ogolmgk383pbftbqnkp; _identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '52015'
+    'REDIRECT_URL' => '/hrm/web/admin/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/admin/index'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621777308.1689
+    'REQUEST_TIME' => 1621777308
+]
+2021-05-23 15:42:59 [127.0.0.1][-][97vfpl1ogolmgk383pbftbqnkp][error][Error] Error: Class 'app\models\Users' not found in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php:690
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#18 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#19 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#21 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#23 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2021-05-23 15:42:59 [127.0.0.1][-][97vfpl1ogolmgk383pbftbqnkp][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S\";}'
+    'PHPSESSID' => '97vfpl1ogolmgk383pbftbqnkp'
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=d5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S%22%3B%7D; PHPSESSID=97vfpl1ogolmgk383pbftbqnkp; _identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '52035'
+    'REDIRECT_URL' => '/hrm/web/admin/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/admin/index'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621777379.535
+    'REQUEST_TIME' => 1621777379
+]
+2021-05-23 15:44:53 [127.0.0.1][-][97vfpl1ogolmgk383pbftbqnkp][error][Error] Error: Class 'app\models\Users' not found in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php:690
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#18 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#19 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#21 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#23 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2021-05-23 15:44:53 [127.0.0.1][-][97vfpl1ogolmgk383pbftbqnkp][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S\";}'
+    'PHPSESSID' => '97vfpl1ogolmgk383pbftbqnkp'
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=d5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S%22%3B%7D; PHPSESSID=97vfpl1ogolmgk383pbftbqnkp; _identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '52063'
+    'REDIRECT_URL' => '/hrm/web/admin/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/admin/index'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621777493.8655
+    'REQUEST_TIME' => 1621777493
+]
+2021-05-23 15:45:31 [127.0.0.1][-][97vfpl1ogolmgk383pbftbqnkp][error][Error] Error: Class 'app\models\Users' not found in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php:690
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#18 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#19 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#21 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#23 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2021-05-23 15:45:31 [127.0.0.1][-][97vfpl1ogolmgk383pbftbqnkp][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S\";}'
+    'PHPSESSID' => '97vfpl1ogolmgk383pbftbqnkp'
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=d5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S%22%3B%7D; PHPSESSID=97vfpl1ogolmgk383pbftbqnkp; _identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '52078'
+    'REDIRECT_URL' => '/hrm/web/admin/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/admin/index'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621777531.6452
+    'REQUEST_TIME' => 1621777531
+]
+2021-05-23 15:45:36 [127.0.0.1][-][97vfpl1ogolmgk383pbftbqnkp][error][Error] Error: Class 'app\models\Users' not found in C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php:690
+Stack trace:
+#0 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#1 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#2 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(247): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2-debug\src\Module.php(218): yii\debug\Module->initPanels()
+#11 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(392): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#18 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#19 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#21 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\xampp\htdocs\hrm\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#23 C:\xampp\htdocs\hrm\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2021-05-23 15:45:36 [127.0.0.1][-][97vfpl1ogolmgk383pbftbqnkp][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S\";}'
+    'PHPSESSID' => '97vfpl1ogolmgk383pbftbqnkp'
+    '_identity' => 'cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=d5210d7240ce34547be781b0e69be2682042c701c42565dd00dda1e6e1c4ef16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22iCYAGB9KBQoICFRSxG2VjLMD2QwLEY3S%22%3B%7D; PHPSESSID=97vfpl1ogolmgk383pbftbqnkp; _identity=cecb2221733b59be12c019cea8ce74700cd1cbbcd74dd165f520d1a5240c21cca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\app\\Teja\\product\\12.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Android;C:\\Windows\\System32;C:\\Program Files\\nodejs\\;C:\\curl;C:\\Users\\Ravi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ravi\\AppData\\Roaming\\npm;C:\\Users\\Ravi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/hrm/web/index.php'
+    'REMOTE_PORT' => '52082'
+    'REDIRECT_URL' => '/hrm/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hrm/web/site/login'
+    'SCRIPT_NAME' => '/hrm/web/index.php'
+    'PHP_SELF' => '/hrm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1621777536.5172
+    'REQUEST_TIME' => 1621777536
+]

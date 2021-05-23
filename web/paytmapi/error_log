@@ -1,0 +1,2 @@
+[11-Mar-2020 09:53:14 Etc/GMT] PHP Notice:  Undefined index: merchantkey in /home/foodqc1j/public_html/development/api/paytmapi/generateChecksum.php on line 33
+[11-Mar-2020 09:53:14 Etc/GMT] PHP Notice:  Undefined index: ORDER_ID in /home/foodqc1j/public_html/development/api/paytmapi/generateChecksum.php on line 39
